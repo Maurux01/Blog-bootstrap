@@ -239,6 +239,13 @@ h1, h2, h3 {
 .blogArticleLink::after {
   content: "→";
 }
+span.blogArticleLink {
+  cursor: default;
+}
+span.blogArticleLink:hover {
+  filter: none;
+  transform: none;
+}
 .contacto {
   max-width: var(--max);
   margin: 0 auto;

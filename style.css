@@ -63,34 +63,6 @@ h1, h2, h3 {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(56, 189, 248, 0.25);
 }
-.logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: #fff;
-  font-weight: 800;
-  font-size: 1.25rem;
-  text-decoration: none;
-  letter-spacing: -0.02em;
-}
-.logo img {
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.logo img[src=""],
-.logo img:not([src]) {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border-radius: 10px;
-  border: 0;
-  color: transparent;
-  overflow: hidden;
-}
-.logo::after {
-  content: "TechBlog";
-  color: #fff;
-}
 .navMenu {
   display: flex;
   align-items: center;

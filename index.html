@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Blog Tecnologia</title>
 </head>
+
 <body>
     <header class="navbar">
         <a href="#" class="logo">
@@ -51,30 +53,78 @@
                 </article>
             </div>
         </section>
+
+        <section class="contacto" id="contacto">
+
+            <h2 class="contacto-titulo">
+                Hablemos de tu proyecto
+            </h2>
+
+            <p class="contacto-descripcion">
+                cuentanos que necesitas y nos pondremos en contacto contigo.
+            </p>
+
+            <form class="formulario-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="servicio">Servicio:</label>
+                    <select name="servicio" id="servicio" required>
+
+                        <option value="">Selecciona un servicio</option>
+                        <option value="desarrollo-web">Desarrollo Web</option>
+                        <option value="diseño-web">Diseño web</option>
+                        <option value="software">Desarrollo de software</option>
+                        <option value="otro">Otro</option>
+
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="boton-contacto">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
+
     </main>
     <footer class="footer">
         <p>
             Blog tecnológico
         </p>
         <h2>Equipo de Desarrollo:</h2>
-            <ul>
-                <li>
-                    <p>Nombre completo</p>
-                    <p>Correo: ejemplo@correo.com</p>
-                </li>
-                <li>
-                    <p>Nombre completo</p>
-                    <p>Correo: ejemplo@correo.com</p>
-                </li>
-                <li>
-                    <p>Nombre completo</p>
-                    <p>Correo: ejemplo@correo.com</p>
-                </li>
-                <li>
-                    <p>Nombre completo</p>
-                    <p>Correo: ejemplo@correo.com</p>
-                </li>
-            </ul>
+        <ul>
+            <li>
+                <p>Nombre completo</p>
+                <p>Correo: ejemplo@correo.com</p>
+            </li>
+            <li>
+                <p>Nombre completo</p>
+                <p>Correo: ejemplo@correo.com</p>
+            </li>
+            <li>
+                <p>Nombre completo</p>
+                <p>Correo: ejemplo@correo.com</p>
+            </li>
+            <li>
+                <p>Nombre completo</p>
+                <p>Correo: ejemplo@correo.com</p>
+            </li>
+        </ul>
     </footer>
 </body>
+
 </html>

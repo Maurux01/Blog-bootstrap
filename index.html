@@ -5,13 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Blog Tecnologia</title>
-  </head>
-  <body>
-    <header></header>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav aria-label="Navegacion principal">
+            <ul class="navMenu">
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#blogSection">Blogs</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contactanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-      <section class="blogSection">
-        <h2>Titulo de los articulos</h2>
-        <p>Parrafo de introduccion a la seccion de publicaciones</p>
+        <section class="hero" id="inicio">
+            <div class="heroContent">
+                <h1>Tecnología, IA y programación sin complicaciones</h1>
+                <p class="heroDescription">
+                    Guías breves, resúmenes claros y tendencias en software, cloud y gadgets. Sin páginas externas: todo lo esencial, directo en esta landing.
+                </p>
+            </div>
+        </section>
+
+        <section class="blogSection" id="blogSection">
+            <h2>Últimos artículos de tecnología</h2>
+            <p>Resúmenes breves de IA, ciberseguridad, cloud y desarrollo web. Todo el contenido está en esta landing, sin páginas externas.</p>
+
+            <div class="blogArticleContainer">
+                <article class="blogArticle">
+                    <img src="images/ia.svg" alt="Ilustración de inteligencia artificial generativa" class="blogArticleImg">
+                    <h3 class="blogArticleHeader">IA generativa en el desarrollo</h3>
+                    <p class="blogArticleDescription">
+                        Cómo los copilotos de código aceleran la programación, las pruebas y la documentación sin perder calidad.
+                    </p>
+                    <span class="blogArticleLink">Leer resumen</span>
+                </article>
+                <article class="blogArticle">
+                    <img src="images/seguridad.svg" alt="Escudo digital de ciberseguridad" class="blogArticleImg">
+                    <h3 class="blogArticleHeader">Ciberseguridad esencial para pymes</h3>
+                    <p class="blogArticleDescription">
+                        2FA, copias de seguridad y actualizaciones: hábitos básicos que evitan la mayoría de incidentes comunes.
+                    </p>
+                    <span class="blogArticleLink">Leer resumen</span>
+                </article>
+                <article class="blogArticle">
+                    <img src="images/cloud.svg" alt="Servidores en la nube conectados" class="blogArticleImg">
+                    <h3 class="blogArticleHeader">Cloud nativo y DevOps</h3>
+                    <p class="blogArticleDescription">
+                        Contenedores, CI/CD y observabilidad para desplegar más rápido, con menos errores y costos controlados.
+                    </p>
+                    <span class="blogArticleLink">Leer resumen</span>
+                </article>
+                <article class="blogArticle">
+                    <img src="images/web.svg" alt="Código de desarrollo web moderno" class="blogArticleImg">
+                    <h3 class="blogArticleHeader">Desarrollo web moderno</h3>
+                    <p class="blogArticleDescription">
+                        Rendimiento, accesibilidad y SEO técnico: las claves para una web rápida que convierte visitas en clientes.
+                    </p>
+                    <span class="blogArticleLink">Leer resumen</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+
+            <h2 class="contacto-titulo">
+                Hablemos de tu proyecto
+            </h2>
+
+            <p class="contacto-descripcion">
+                cuentanos que necesitas y nos pondremos en contacto contigo.
+            </p>
+
+            <form class="formulario-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="servicio">Servicio:</label>
+                    <select name="servicio" id="servicio" required>
+
+                        <option value="">Selecciona un servicio</option>
+                        <option value="desarrollo-web">Desarrollo Web</option>
+                        <option value="diseño-web">Diseño web</option>
+                        <option value="software">Desarrollo de software</option>
+                        <option value="otro">Otro</option>
+
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="boton-contacto">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
 
         <article class="blogArticle">
           <img src="" alt="Describir imagen" />
@@ -43,35 +149,50 @@
       </section>
     </main>
     <footer class="footer">
-  <p class="etiqueta">Blog tecnológico</p>
-  <h2>Equipo de Desarrollo:</h2>
-
-  <ul class="equipo">
-    <li class="tarjeta">
-      <h3>Isabela Saenz</h3>
-      <p>Correo: <a href="mailto:isabelasaenz@gmail.com">isabelasaenz@gmail.com</a></p>
-      <p>Tel: <a href="tel:+573001234567">573001234567</a></p>
-    </li>
-
-    <li class="tarjeta">
-      <h3>Camilo Restrepo Gómez</h3>
-      <p>Correo: <a href="mailto:camilo.restrepo@gmail.com">camilo.restrepo@gmail.com</a></p>
-      <p>Tel: <a href="tel:+573001234567">573001234567</a></p>
-    </li>
-
-    <li class="tarjeta">
-      <h3>Valentina Ortiz Parra</h3>
-      <p>Correo: <a href="mailto:valentina.ortiz@gmail.com">valentina.ortiz@gmail.com</a></p>
-      <p>Tel: <a href="tel:+573001234567">573001234567</a></p>
-    </li>
-
-    <li class="tarjeta">
-      <h3>Santiago Mejía Cárdenas</h3>
-      <p>Correo: <a href="mailto:santiago.mejia@gmail.com">santiago.mejia@gmail.com</a></p>
-      <p>Tel: <a href="tel:+573001234567">573001234567</a></p>
-    </li>
-  </ul>
-</footer>
+        <h2>Quiénes somos</h2>
+        <p>
+            Somos estudiantes del bootcamp Generation Colombia. Creamos este sitio para ayudar a divulgar blogs y noticias de TI de forma clara y accesible.
+        </p>
+        <h2>Equipo de Desarrollo:</h2>
+        <ul>
+            <li>
+                <p>Andres Florez</p>
+                <p>
+                    Correo: <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a>
+                </p>
+                <p>
+                    Tel: <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer"> 573001234567</a>
+                </p>
+            </li>
+            <li>
+                <p>Valentina Bucuru</p>
+                <p>
+                    Correo: <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a>
+                </p>
+                <p>
+                    Tel: <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer"> 573001234567</a>
+                </p>
+            </li>
+            <li>
+                <p>Juan Acevedo</p>
+                <p>
+                    Correo: <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a>
+                </p>
+                <p>
+                    Tel: <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer"> 573001234567</a>
+                </p>
+            </li>
+            <li>
+                <p>Mauro infante</p>
+                <p>
+                    Correo: <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a>
+                </p>
+                <p>
+                    Tel: <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer"> 573001234567</a>
+                </p>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

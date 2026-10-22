@@ -9,25 +9,29 @@
     <link rel="stylesheet" href="style.css" />
     <title>Blog Tecnologia (bootstrap)</title>
 </head>
-
 <!-- Antes estaba <body> sin clase-->
 <!-- bg-primary-subtle text-white -->
 <body class="bg-primary-subtle text-white">
+
     <header class="navbar">
-        <nav aria-label="Navegacion principal">
-            <ul class="navMenu">
-                <li>
-                    <a href="#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="#blogSection">Blogs</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contactanos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" class="navLogo">Blog<span>Tech</span></a>
+
+        <button class="navToggle" type="button"
+                aria-expanded="false" aria-controls="navMenu"
+                aria-label="Abrir menú">
+            <span class="navToggleBar"></span>
+            <span class="navToggleBar"></span>
+            <span class="navToggleBar"></span>
+        </button>
+
+        <ul class="navMenu" id="navMenu">
+            <li><a href="#inicio" class="navLink">Inicio</a></li>
+            <li><a href="#blogSection" class="navLink">Blogs</a></li>
+            <li><a href="#contacto" class="navLink navLinkCta">Contáctanos</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
         <!-- old class "hero" -->
         <section id="inicio" class="bg-dark text-white py-5">
@@ -66,7 +70,7 @@
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3">
                     <!-- old class "blogArticle" -->
-                    <article class="card h-100 shadow-sm">
+                    <article class="card h-100 shadow-sm blogArticle">
                         <!-- old class "blogArticleImg" -->
                         <img
                             src="images/ia.svg"
@@ -96,7 +100,7 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
                     <!-- old class "blogArticle" -->
-                    <article class="card h-100 shadow-sm">
+                    <article class="card h-100 shadow-sm blogArticle">
                         <!-- old class "blogArticleImg" -->
                         <img
                             src="images/seguridad.svg"
@@ -127,7 +131,7 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
                     <!-- old class "blogArticle" -->
-                    <article class="card h-100 shadow-sm">
+                    <article class="card h-100 shadow-sm blogArticle">
                         <!-- old class "blogArticleImg" -->
                         <img
                             src="images/cloud.svg"
@@ -157,7 +161,7 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
                     <!-- old class "blogArticle" -->
-                    <article class="card h-100 shadow-sm">
+                    <article class="card h-100 shadow-sm blogArticle">
                         <!-- old class "blogArticleImg" -->
                         <img
                             src="images/web.svg"
@@ -239,7 +243,6 @@
             </form>
            
         </section>
-
     </main>
     <footer class="footer">
         <h2>Quiénes somos</h2>
@@ -294,10 +297,7 @@
                 </p>
             </li>
         </ul>
+
     </footer>
-
-   
-</footer>
 </body>
-
 </html>

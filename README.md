@@ -13,3 +13,7 @@ https://trello.com/invite/b/6acfbcfe7976ab45ee4e4bed/ATTI99b7423431f310eb2102f50
 - JUAN ANDRES BOHORQUEZ ACEVEDO
 - MAURO FELIPE INFANTE DEL PORTILLO
 - MANUEL RAMIREZ
+
+
+# OLD 
+https://vbucurumalambo-glitch.github.io/Blog-/

@@ -156,7 +156,7 @@ h1, h2, h3 {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
-.blogArticle {
+/* .blogArticle {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -165,7 +165,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+} */
 .blogArticle:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);

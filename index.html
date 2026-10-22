@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="style.css" />
     <title>Blog Tecnologia</title>
 </head>
-
 <body>
     <header class="navbar">
-        <nav aria-label="Navegacion principal">
-            <ul class="navMenu">
-                <li>
-                    <a href="#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="#blogSection">Blogs</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contactanos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" class="navLogo">Blog<span>Tech</span></a>
+
+        <button class="navToggle" type="button"
+                aria-expanded="false" aria-controls="navMenu"
+                aria-label="Abrir menú">
+            <span class="navToggleBar"></span>
+            <span class="navToggleBar"></span>
+            <span class="navToggleBar"></span>
+        </button>
+
+        <ul class="navMenu" id="navMenu">
+            <li><a href="#inicio" class="navLink">Inicio</a></li>
+            <li><a href="#blogSection" class="navLink">Blogs</a></li>
+            <li><a href="#contacto" class="navLink navLinkCta">Contáctanos</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
         <section class="hero" id="inicio">
             <div class="heroContent">
